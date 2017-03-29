@@ -1,22 +1,23 @@
 class PrimeFactors
 
   def get_prime_factors(number)
-    prime_factors = []
-    if is_prime?(number)
-      prime_factors.push(number)
-    end
-    prime_factors
+   
   end
 
-  def is_prime?(num)
-    (2..num).each do |i|
-      if num % i == 0 && i < num
+  # def return_primes(number)
+  #   if is_prime?(number) && number != 1
+  #     prime
+  #   end
+  # end
+
+  def is_prime?(number)
+    (2..number).each do |i|
+      if number % i == 0 && i < number
         return false
       end
     end
     true
   end
-
 
 end
 
