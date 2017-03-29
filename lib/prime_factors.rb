@@ -1,7 +1,11 @@
 class PrimeFactors
 
   def get_prime_factors(number)
-    
+    prime_factors = []
+    if is_prime?(number)
+      prime_factors.push(number)
+    end
+    prime_factors
   end
 
   def is_prime?(num)
