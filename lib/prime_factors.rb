@@ -7,6 +7,9 @@ class PrimeFactors
         prime_factors.push(number)
         natural_number /= number
       end
+      if natural_number == 1
+        break
+      end
     end
     prime_factors
   end
