@@ -5,7 +5,7 @@ RSpec.describe PrimeFactors do
   let(:prime_factors) {PrimeFactors.new}
 
   def expect_primes(number, primes)
-    expect(prime_factors.get_prime_factors(number)).to eq(primes)
+    expect(prime_factors.get_prime_factors_of(number)).to eq(primes)
   end
 
   it 'returns empty array for 1' do

@@ -1,6 +1,6 @@
 class PrimeFactors
 
-  def get_prime_factors(natural_number)
+  def get_prime_factors_of(natural_number)
     prime_factors = []
     (2..natural_number).each do |number|
       while natural_number % number == 0
